@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.ai-applied.nl/api/sentiment_api/
+    body:
+      encoding: UTF-8
+      string: request=%7B%22data%22%3A%7B%22api_key%22%3A%22837b4a6bc73bce85abec5db64dfcde9cab92a1bf%22%2C%22call%22%3A%7B%22return_original%22%3Afalse%2C%22classifier%22%3A%22default%22%2C%22data%22%3A%5B%5B%7B%22text%22%3A%22Ma+che+figata%22%2C%22language_iso%22%3A%22ita%22%2C%22id%22%3A0%7D%5D%5D%7D%7D%7D
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 24 Oct 2014 17:13:20 GMT
+      Server:
+      - Apache/2.2.17 (Ubuntu)
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '145'
+      Content-Type:
+      - application/x-javascript
+    body:
+      encoding: UTF-8
+      string: '{"status": 1, "id": null, "response": {"data": [{"confidence_sentiment":
+        0.0, "sentiment_class": "unknown"}], "description": "OK: Call processed.",
+        "success": true}}'
+    http_version: 
+  recorded_at: Fri, 24 Oct 2014 17:14:12 GMT
+recorded_with: VCR 2.9.3
