@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Applied::VERSION
   spec.authors       = ["Andrea Mostosi"]
   spec.email         = ["andrea.mostosi@zenkay.net"]
-  spec.summary       = %q{Ruby Gem for Dandelion's AI Applied service}
-  spec.description   = %q{Ruby Gem for Dandelion's AI Applied service (ai-applied.nl)}
-  spec.homepage      = ""
+  spec.summary       = %q{Ruby Gem for AI Applied service}
+  spec.description   = %q{Ruby Gem for AI Applied service (ai-applied.nl)}
+  spec.homepage      = "https://github.com/zenkay/ai-applied-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
