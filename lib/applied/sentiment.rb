@@ -18,17 +18,17 @@ module Applied
     protected
 
     def call(endpoint, data, options)
-      request = {
-        data: {
-          api_key: Applied.config.api_key,
-          call: {
-             return_original: options[:return_original],
-             classifier: options[:classifier],
-             data:[data]
+      begin
+        request = {
+          data: {
+            api_key: Applied.config.api_key,
+            call: {
+               return_original: options[:return_original],
+               classifier: options[:classifier],
+               data: data
+            }
           }
         }
-      }
-      begin
         conn = Faraday.new(url: Applied.config.endpoint) do |faraday|
           faraday.request  :url_encoded
           faraday.adapter  Faraday.default_adapter
@@ -36,7 +36,7 @@ module Applied
         response = conn.post endpoint, request: request.to_json
         JSON.parse response.body
       rescue Exception => e
-        raise Datatxt::BadResponse
+        raise Applied::BadResponse
       end
     end
 
