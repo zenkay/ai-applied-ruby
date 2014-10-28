@@ -1,5 +1,9 @@
 # Sentiment API
 
+- [Setup](#Setup)
+- [Parameters](#Parameters)
+- [Response](#Response)
+
 ## Setup
 
 First you need to configure your account adding your API key. Endpoint sohould be always the same but I keep it configurable.
@@ -36,7 +40,7 @@ The ```data``` parameter contains text you need to analyze with additional infor
 | Parameter | Mandatory | Description |
 | --------- | --------- | ----------- |
 | text | yes | The message text as a string |
-| language_iso | yes | specifying the language of this individual message (```eng``` for English, ```nld``` for Dutch, ```deu``` for German, ```fra``` for French, ```spa``` for Spanish, ```ita``` for Italian, ```rus``` for Russian) |
+| language_iso | yes | Specifying the language of this individual message (```eng``` for English, ```nld``` for Dutch, ```deu``` for German, ```fra``` for French, ```spa``` for Spanish, ```ita``` for Italian, ```rus``` for Russian) |
 | id | yes | Unique message ID as a string or an integer you could use to identify your messages into response |
 
 Data item should be palced into an Array.
@@ -65,3 +69,25 @@ options = {
 ```
 
 ## Response
+
+```
+response = element.analyze(data, options)
+```
+
+Ai Applied return a JSON data that is parsed to a Ruby Hash.
+
+```
+{
+  "status" => 1, 
+  "id" => nil, 
+  "response" => {
+    "data" => [
+      {"confidence_sentiment" => 0.735094833636812, "sentiment_class" => "positive", "id" => 42}, 
+      {"confidence_sentiment" => 0.9914339753287233, "sentiment_class" => "negative", "id" => 69}, 
+      {"confidence_sentiment" => 0.7537000605846166, "sentiment_class" => "negative", "id" => 99}
+    ], 
+    "description" => "OK: Call processed.", 
+    "success" => true
+  }
+}
+```
