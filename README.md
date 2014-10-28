@@ -31,7 +31,7 @@ end
 ### Sentiment API
 
 - [Class Documentation](docs/sentiment_details.md)
-- [Examples of usage](docs/sentiment_examples.md)
+- [Usage Examples](docs/sentiment_examples.md)
 
 ```
 element = Applied::Sentiment.new
@@ -47,7 +47,7 @@ data = [
 response = element.analyze(data, options)
 ```
 
-- _[Official documentation on Applied's website](http://ai-applied.nl/api-documentation/2013/10/5/sentiment-analysis-api-documentation)_
+- _[Official documentation](http://ai-applied.nl/api-documentation/2013/10/5/sentiment-analysis-api-documentation)_
 
 ### Text Analysis API
 
