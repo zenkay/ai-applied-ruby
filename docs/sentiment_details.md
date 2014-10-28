@@ -56,6 +56,8 @@ data = [
 
 ### options
 
+The ```options``` parameter set configuration of the analysis.
+
 | Parameter | Mandatory | Default | Description |
 | --------- | --------- | ------- | ----------- |
 | return_original | yes | false | Return full posted messages (true) together with the language annotation or only the message id's (false) annotated with language |
