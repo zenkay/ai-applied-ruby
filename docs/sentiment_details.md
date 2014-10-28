@@ -1,8 +1,8 @@
 # Sentiment API
 
-- [Setup](#Setup)
-- [Parameters](#Parameters)
-- [Response](#Response)
+- [Setup](#setup)
+- [Parameters](#parameters)
+- [Response](#response)
 
 ## Setup
 
@@ -43,7 +43,7 @@ The ```data``` parameter contains text you need to analyze with additional infor
 | language_iso | yes | Specifying the language of this individual message (```eng``` for English, ```nld``` for Dutch, ```deu``` for German, ```fra``` for French, ```spa``` for Spanish, ```ita``` for Italian, ```rus``` for Russian) |
 | id | yes | Unique message ID as a string or an integer you could use to identify your messages into response |
 
-Data item should be palced into an Array.
+Data item should be placed into an Array.
 You could send more than one message in a single call.
 
 ```
