@@ -28,4 +28,23 @@ end
 
 ## Usage
 
-[...]
+### Sentiment API
+
+- [Class Documentation](docs/sentiment_details.md)
+- [Examples of usage](docs/sentiment_examples.md)
+
+```
+element = Applied::Sentiment.new
+
+options = {return_original: false, classifier: "default"}
+
+data = [
+  {text: "Sono molto contento di quello che è successo", language_iso: "ita", id: 42},
+  {text: "Sono molto arrabbiato per quello che è successo", language_iso: "ita", id: 69},
+  {text: "Sono molto indifferente a quello che è successo", language_iso: "ita", id: 99}
+]
+
+response = element.analyze(data, options)
+```
+
+- _[Official documentation on Applied's website](http://ai-applied.nl/api-documentation/2013/10/5/sentiment-analysis-api-documentation)_
