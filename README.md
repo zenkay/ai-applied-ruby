@@ -48,3 +48,28 @@ response = element.analyze(data, options)
 ```
 
 - _[Official documentation on Applied's website](http://ai-applied.nl/api-documentation/2013/10/5/sentiment-analysis-api-documentation)_
+
+### Text Analysis API
+
+Coming Soon
+
+### Text Extract API
+
+Coming Soon
+
+### Data Miner API
+
+Coming Soon
+
+### Text Label API
+
+Coming Soon
+
+### Demographics API
+
+Coming Soon
+
+### Language Detection API
+
+Coming Soon
+

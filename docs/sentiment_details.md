@@ -1,4 +1,4 @@
-# Sentiment API
+# Sentiment API Documentation
 
 - [Setup](#setup)
 - [Parameters](#parameters)
